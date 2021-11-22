@@ -1,0 +1,13 @@
+package Question3;
+
+public class PayPal implements iPaymentStrategy{
+    @Override
+    public void pay(int amount) {
+        System.out.println("PayPal : $" + amount);
+    }
+
+    private String email;
+    public PayPal(String email){
+        this.email = email;
+    }
+}
